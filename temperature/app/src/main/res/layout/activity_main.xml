@@ -1,0 +1,129 @@
+<?xml version = "1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity"
+    >
+
+<!--    <ImageView-->
+<!--        android:id="@+id/bgImage"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:src="@drawable/temp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        />-->
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conversion Of Temperatures"
+        android:textSize="40sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        tools:ignore="HardcodedText"
+        />
+
+    <TextView
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView1"
+        android:layout_marginTop="20dp"
+        android:text="Your Selection"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginStart="30dp"
+        tools:ignore="HardCodedText"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radio"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+        >
+        <RadioButton
+            android:id="@+id/celcius"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Celcius"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+        <RadioButton
+            android:id="@+id/farhrenheit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Farhrenheit"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/radioGroup"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Input Value below"
+        android:textSize="24sp"
+        />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter Temperature"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:textColor="@color/black"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/convert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00FF00"
+        android:text="Convert"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/input"
+        android:layout_marginTop="20dp"
+        tools:ignore="HardCodedText"
+        />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/convert"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        />
+
+</RelativeLayout>
