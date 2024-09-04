@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "552074000974",
+    "project_id": "schoolie-5a073",
+    "storage_bucket": "schoolie-5a073.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552074000974:android:ede14c04dd315796ebe11f",
+        "android_client_info": {
+          "package_name": "com.example.schoolie"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBDoDiNfJnzsNIHxkuEG_l29X9Lbvb4xRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
