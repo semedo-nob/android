@@ -35,6 +35,13 @@ public class BookAppointmentActivity extends AppCompatActivity {
         FeeEditText.setKeyListener(null);
 
 
+        buttonBack.setOnClickLstener(view->{
+            Intent it=new Intent(BookAppointmentActivity.java.this,DoctorDetailsActivity.class);
+            startActivity(it);
+        
+            )};
+
+
         Intent it =getIntent();
         String title = it.getStringExtra("text1");
         String name = it.getStringExtra("text2");
@@ -54,9 +61,8 @@ public class BookAppointmentActivity extends AppCompatActivity {
 
     }
 
-    buttonBack.setOnClickListener(view->{
-            startActivity(new Intent(BookAppointmentActivity.this,DoctorDetailsActivity.class));
+    
 
-};
+
 
 }
