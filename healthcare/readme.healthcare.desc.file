@@ -1,0 +1,24 @@
+# Healthcare Android Application
+
+## Description
+The Healthcare Android application is designed to improve the management of healthcare services. It streamlines patient data management, appointment scheduling, and payment processing. The app integrates with online payment systems like Stripe and M-Pesa, while offering optional pages loaded via WebView for easy content updates.
+
+## Features
+- **Patient Registration and Login**: Secure user authentication and patient management.
+- **Appointment Scheduling**: Allows patients to book appointments with healthcare professionals.
+- **Payment Integration**: Online payment support via Stripe and M-Pesa.
+- **WebView Support**: Easy-to-update optional pages for healthcare policies, educational resources, or FAQs.
+- **SQLite Database**: Local data storage for offline access.
+- **Firebase Integration**: For authentication and real-time updates (optional).
+
+## Tech Stack
+- **Language**: Java
+- **Database**: SQLite (local), PostgreSQL (planned for online integration)
+- **Payment Systems**: Stripe, M-Pesa
+- **Frameworks**: Firebase for authentication (optional)
+- **Tools**: Android Studio, Git for version control
+
+## Installation
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/your-username/healthcare-android-app.git
